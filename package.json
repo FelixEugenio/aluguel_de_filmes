@@ -2,6 +2,9 @@
   "name": "aluguel-filmes-locadora",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "dev":"ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+  },
   "repository": "https://github.com/FelixEugenio/aluguel_de_filmes.git",
   "author": "felix eugenio mavila <felixmacarenco@gmail.com>",
   "license": "MIT",
