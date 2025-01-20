@@ -2,10 +2,11 @@ API - de aluguel de filmes
 
 Dependencias a Instalar 
 -- yarn add express
+-- yarn add prisma
+-- yarn add @prisma/client
 
 @types
  -- yarn add ts-node-dev -D
  -- yarn add typescript -D
  -- yarn @types/express -D
 
- 

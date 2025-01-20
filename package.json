@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev":"ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
   },
   "repository": "https://github.com/FelixEugenio/aluguel_de_filmes.git",
   "author": "felix eugenio mavila <felixmacarenco@gmail.com>",
@@ -12,7 +12,9 @@
     "express": "^4.21.2"
   },
   "devDependencies": {
+    "@prisma/client": "^6.2.1",
     "@types/express": "^5.0.0",
+    "prisma": "^6.2.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.3"
   }
