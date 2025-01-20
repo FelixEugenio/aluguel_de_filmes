@@ -10,3 +10,15 @@ Dependencias a Instalar
  -- yarn add typescript -D
  -- yarn @types/express -D
 
+@Execute Commands
+yarn init -y
+yarn tsc -init
+yarn prisma init
+
+@Configure SqLite
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
