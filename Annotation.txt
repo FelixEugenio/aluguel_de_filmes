@@ -1,0 +1,11 @@
+API - de aluguel de filmes
+
+Dependencias a Instalar 
+-- yarn add express
+
+@types
+ -- yarn add ts-node-dev -D
+ -- yarn add typescript -D
+ -- yarn @types/express -D
+
+ 
