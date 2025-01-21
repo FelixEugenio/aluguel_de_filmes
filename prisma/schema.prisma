@@ -30,4 +30,20 @@ id String @id @default(uuid())
 name String
 created_at DateTime @default(now())
 updated_at DateTime @default(now())
+movie Movie[]
+@@map("genres")
+}
+
+model Movie {
+    id String @id @default(uuid())
+    name String 
+    description String
+    daily_rate Float
+    fine_amount Float
+    available Boolean
+    created_at DateTime @default(now())
+    updated_at DateTime @default(now())
+    genre_id String
+    genre Genre @relation(fields: [genre_id],references: [id])
+    @@map("movies")
 }
