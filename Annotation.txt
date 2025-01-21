@@ -14,6 +14,7 @@ Dependencias a Instalar
 yarn init -y
 yarn tsc -init
 yarn prisma init
+yarn prisma migrate dev
 
 @Configure SqLite
 
@@ -21,4 +22,19 @@ datasource db {
   provider = "sqlite"
   url      = "file:./dev.db"
 }
+
+Aplicando Principios de SOLID
+dividindo responsabilidades
+
+Estrutura de pastas por entidades
+
+dentro dos Modules
+users
+repository
+dtos
+implementations
+useCases
+
+
+
 
