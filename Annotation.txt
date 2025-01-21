@@ -48,6 +48,9 @@ descomentar essas duas linhas
 
 @Registrando um Singleton
 
+@Criptografando Senha
+yarn add bcrypt
+
 
 
 
