@@ -11,6 +11,12 @@ export class CreateGenreUseCase {
 
     async execute(name: string){
 
+        const verifyIfGenreAlreadyExists = await this.genresRepository.findByName(name);
+
+        if(!verifyIfGenreAlreadyExists) {
+            throw new AppError("Genre already exists!");
+        }
+
         const genre = await this.genresRepository.create(name);
 
         return genre
