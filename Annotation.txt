@@ -59,5 +59,6 @@ yarn add jsonwebtoken
 yarn add @types/jsonwebtoken
 
 
-
+@Seed
+ yarn prisma db seed
 
