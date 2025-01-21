@@ -18,5 +18,5 @@ export class CreateMoviesControllers {
         })
 
         return res.status(201).json(movies);
-}
+  }
 }
