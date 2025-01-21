@@ -34,6 +34,19 @@ repository
 dtos
 implementations
 useCases
+shared
+routes
+helpers
+
+@Injeção de depencia com tsrynge
+yarn add tsyringe
+yarn add reflect-metadata
+
+descomentar essas duas linhas
+"experimentalDecorators": true,                   /* Enable experimental support for legacy experimental decorators. */
+"emitDecoratorMetadata": true, 
+
+@Registrando um Singleton
 
 
 
