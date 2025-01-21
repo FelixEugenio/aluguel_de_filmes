@@ -6,7 +6,19 @@ export class CreateUserUseCases {
     private usersRepository:IUsersRepository
   ){}
 
-  execute({ name, email, password }: ICreateUserDto) {
-    const verifyIfUserAlreadyExists = this.usersRepository.findByEmail(email);
+ async execute({ name, email, password }: ICreateUserDto) {
+    const verifyIfUserAlreadyExists = await this.usersRepository.findByEmail(email);
+
+    if(verifyIfUserAlreadyExists){
+        throw new Error("User already exists");
+    }
+
+    const user = await this.usersRepository.create({
+        name,
+        email,
+        password
+    })
+
+    return user;
   }
 }
