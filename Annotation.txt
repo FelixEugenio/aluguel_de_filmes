@@ -52,5 +52,12 @@ descomentar essas duas linhas
 yarn add bcrypt
 
 
+@Criando nossos proprios erros
+
+@Autenticação
+yarn add jsonwebtoken
+yarn add @types/jsonwebtoken
+
+
 
 
