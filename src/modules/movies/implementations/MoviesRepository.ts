@@ -16,14 +16,14 @@ export class MoviesRepository implements IMoviesRepository {
       })
       return movie as Promise<Movie>
   }
-  async  create({ name, description, daily_rate, fine_amount, available, genre_id }: ICreateMoviesDtos): Promise<Movie> {
+  async  create({ name, description, daily_rate, fine_amount, genre_id }: ICreateMoviesDtos): Promise<Movie> {
         const movie = await prismaClient.movie.create({
             data: {
                 name,
                 description,
                 daily_rate,
                 fine_amount,
-                available,
+                available: true,
                 genre_id
             }
         })

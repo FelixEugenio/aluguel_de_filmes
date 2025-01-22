@@ -40,7 +40,7 @@ model Movie {
     description String
     daily_rate Float
     fine_amount Float
-    available Boolean
+    available Boolean?
     created_at DateTime @default(now())
     updated_at DateTime @default(now())
     genre_id String
