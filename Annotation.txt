@@ -1,6 +1,4 @@
-
-
-Dependencias a Instalar 
+ 
 -- yarn add express
 -- yarn add prisma
 -- yarn add @prisma/client
